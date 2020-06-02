@@ -1,0 +1,14 @@
+
+You need ell.traineddata (https://github.com/tesseract-ocr/tessdata/blob/master/ell.traineddata)
+in the tessdata-dir 
+
+> pdfimages anafentos_cyprob_traino4.pdf cyprob-page
+> tesseract cyprob-page-001.ppm output -l ell --tessdata-dir ~/Downloads/
+
+
+Then spellcheck with automatic replacement of suggested words: auto_spell_check.py
+First you need the greek dictionary: https://ftp.gnu.org/gnu/aspell/dict/el/
+
+Aspell suggest memomoization of function calls to aspell suggest..
+https://stackoverflow.com/questions/1988804/what-is-memoization-and-how-can-i-use-it-in-python
+https://wiki.python.org/moin/PythonDecoratorLibrary#Memoize
